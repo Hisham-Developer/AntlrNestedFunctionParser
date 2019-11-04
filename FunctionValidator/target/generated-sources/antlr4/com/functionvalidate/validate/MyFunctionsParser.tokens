@@ -1,0 +1,12 @@
+COMMA=4
+DOT=3
+L_BRACKET=5
+R_BRACKET=6
+WS=7
+FUNCTION=1
+NAME=2
+'.'=3
+','=4
+')'=6
+'('=5
+'FUNCTION'=1
