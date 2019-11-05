@@ -24,7 +24,7 @@ public class FunctionValidate {
 
 
 	public static void main(String[] args) {
-		String input = "FUNCTION.concat(FUNCTION.substring(S,Integer,Integer),String)";
+		String input = "FUNCTION.concat(FUNCTION.substring(String,Integer,Integer),String)";
 		ANTLRInputStream str = new ANTLRInputStream(input);
 		MyFunctionsLexer lexer = new MyFunctionsLexer(str);
 		CommonTokenStream tokens = new CommonTokenStream(lexer);

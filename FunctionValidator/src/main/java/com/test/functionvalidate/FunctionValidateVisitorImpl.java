@@ -35,10 +35,11 @@ public class FunctionValidateVisitorImpl extends MyFunctionsParserBaseVisitor<St
             if (c.getText() == "<EOF>")
                 continue;
             String top_level_result = visit(ctx.getChild(i));
-            /*if (top_level_result == null)
+            System.out.println("top_level_result-->"+top_level_result);
+            if (top_level_result == null)
             {
                 System.out.println("Failed semantic analysis: "+ ctx.getChild(i).getText());
-            }*/
+            }
         }
         return null;
 	}
@@ -46,6 +47,7 @@ public class FunctionValidateVisitorImpl extends MyFunctionsParserBaseVisitor<St
 	@Override
 	public String visitFunction( MyFunctionsParser.FunctionContext ctx) {
 		// Get function name and expected type information.
+		System.out.println("-------------->visitFunction");
         String name = ctx.getChild(2).getText();
         String type=map.get("FUNCTION." + name);
         if (type == null)
@@ -81,6 +83,7 @@ public class FunctionValidateVisitorImpl extends MyFunctionsParserBaseVisitor<St
 	
 	@Override
 	public String visitArgument(ArgumentContext ctx){
+		System.out.println("-------------->ArgumentContext");
 		ParseTree c = ctx.getChild(0);
         if (c instanceof TerminalNodeImpl)
         {
