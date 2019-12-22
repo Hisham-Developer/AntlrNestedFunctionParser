@@ -1,5 +1,5 @@
 lexer grammar MyFunctionsLexer;
-FUNCTION: 'FUNCTION';
+FUNCTION: 'Functions';
 NAME: [A-Za-z0-9]+;
 DOT: '.';
 COMMA: ',';

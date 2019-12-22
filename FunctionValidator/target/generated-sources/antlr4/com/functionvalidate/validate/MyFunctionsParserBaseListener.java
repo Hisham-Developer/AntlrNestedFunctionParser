@@ -1,7 +1,8 @@
-// Generated from com\functionvalidate\validate\MyFunctionsParser.g4 by ANTLR 4.7.2
+// Generated from MyFunctionsParser.g4 by ANTLR 4.4
 package com.functionvalidate.validate;
 
 import org.antlr.v4.runtime.ParserRuleContext;
+import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
@@ -16,60 +17,60 @@ public class MyFunctionsParserBaseListener implements MyFunctionsParserListener 
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFunctions(MyFunctionsParser.FunctionsContext ctx) { }
+	@Override public void enterArgument(@NotNull MyFunctionsParser.ArgumentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFunctions(MyFunctionsParser.FunctionsContext ctx) { }
+	@Override public void exitArgument(@NotNull MyFunctionsParser.ArgumentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFunction(MyFunctionsParser.FunctionContext ctx) { }
+	@Override public void enterFunctions(@NotNull MyFunctionsParser.FunctionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFunction(MyFunctionsParser.FunctionContext ctx) { }
+	@Override public void exitFunctions(@NotNull MyFunctionsParser.FunctionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterArgument(MyFunctionsParser.ArgumentContext ctx) { }
+	@Override public void enterFunction(@NotNull MyFunctionsParser.FunctionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitArgument(MyFunctionsParser.ArgumentContext ctx) { }
+	@Override public void exitFunction(@NotNull MyFunctionsParser.FunctionContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEveryRule(ParserRuleContext ctx) { }
+	@Override public void enterEveryRule(@NotNull ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEveryRule(ParserRuleContext ctx) { }
+	@Override public void exitEveryRule(@NotNull ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void visitTerminal(TerminalNode node) { }
+	@Override public void visitTerminal(@NotNull TerminalNode node) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void visitErrorNode(ErrorNode node) { }
+	@Override public void visitErrorNode(@NotNull ErrorNode node) { }
 }
